@@ -1,0 +1,22 @@
+{
+  "name": "hemodialisis-app",
+  "version": "1.0.0",
+  "description": "Sistema Integral de Hemodiálisis para Cloudflare Pages",
+  "main": "index.js",
+  "scripts": {
+    "build": "python build_static.py",
+    "dev": "python -m http.server 8000",
+    "start": "node functions/api/index.js"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.0.0",
+    "hono": "^3.0.0",
+    "better-sqlite3": "^8.7.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "keywords": ["hemodialisis", "medical", "cloudflare", "pages"],
+  "author": "Sistema Médico",
+  "license": "MIT"
+}
